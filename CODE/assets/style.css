@@ -1,0 +1,194 @@
+/* =====================================
+   Fall 2025 Term Project – Dash Styling
+   Author(s): team020
+   ===================================== */
+
+/* ---------- Base Layout ---------- */
+body {
+    background-color: #fafafa;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+.page-container {
+    max-width: 1600px;
+    margin: auto;
+    padding: 24px 40px 60px 40px;
+}
+
+/* ---------- Header ---------- */
+.page-title {
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+/* ---------- Filters ---------- */
+.filters-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.filter-item {
+    flex: 1;
+    min-width: 220px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* ---------- KPI Cards ---------- */
+.kpi-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.kpi-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.kpi-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.kpi-title {
+    color: #666;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.kpi-value {
+    color: #0078d7;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* ---------- Charts ---------- */
+.chart-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    margin-bottom: 24px;
+}
+
+.charts-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.chart-half {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    flex: 1;
+    min-width: 450px;
+}
+
+/* ---------- Download Button ---------- */
+.download-btn {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.download-btn:hover {
+    background-color: #005fa3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Debug Text ---------- */
+.debug-text {
+    margin-top: 12px;
+    color: #666;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+    .charts-row {
+        flex-direction: column;
+    }
+    .chart-half {
+        min-width: auto;
+    }
+}
+
+/* ---------- Section Titles ---------- */
+.section-subtitle {
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0078d7;
+    border-left: 4px solid #0078d7;
+    padding-left: 8px;
+    margin-bottom: 12px;
+}
+
+.section-header {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 16px;
+}
+
+/* ---------- Static Section Styling ---------- */
+.static-section {
+    background-color: #f4f8fc; /* light blue-gray background */
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.static-card {
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- Interactive Section ---------- */
+.interactive-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.slider-label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+    display: block;
+}
+
+
