@@ -1,8 +1,10 @@
 # e-Commerce Behavior 
 ## Project Overview
 Our project seeks to understand consumer behavior using a large e-commerce dataset comprising millions of events: product views, cart additions, removals, and purchases. We will accomplish two goals: 
-  (1) identify patterns of shopping behavior by clustering sessions and customers into groups such as quick browsers, careful researchers, or loyal buyers; and 
-  (2) predict whether a session will result in a purchase using supervised learning models such as logistic regression and random forests. The results will be presented in an interactive dashboard, allowing users to filter by product category, price range, or shopper type. 
+
+  1. Identify patterns of shopping behavior by clustering sessions and customers into groups such as quick browsers, careful researchers, or loyal buyers; and 
+  
+  2. Predict whether a session will result in a purchase using supervised learning models such as logistic regression and random forests. The results will be presented in an interactive dashboard, allowing users to filter by product category, price range, or shopper type. 
 
 This repo contains the full implementation of the interactive e-Commerce Behavior Analytics Dashboard. The system integrates descriptive analytics, predictive modeling, and clustering-based user segmentation into a unified Dash web application. The dashboard enables users to explore large-scale, session-level e-commerce data through visual summaries, machine-learning insights, and dynamic behavioral segmentation.
 
